@@ -13,6 +13,7 @@ const ratingCard = document.getElementById("rating-card");
 const starRating = document.getElementById("star-rating");
 const submitRatingBtn = document.getElementById("submit-rating");
 const orderConfirmation = document.getElementById("order-confirmation");
+const ratingPopup = document.getElementById("rating-popup");
 
 let order = {};
 
@@ -70,7 +71,9 @@ function updateOrderSummary() {
                 <span class="order-item-name">${item.name}</span>
                 <span class="order-item-details">
                     <span class="quantity">${count}</span>
-                    <span class="amount">$${(item.price * count).toFixed(2)}</span>
+                    <span class="amount">$${(item.price * count).toFixed(
+                      2
+                    )}</span>
                 </span>
             `;
       orderItems.appendChild(orderItem);
@@ -155,12 +158,6 @@ starRating.addEventListener("click", e => {
       star.classList.toggle("active", index < rating);
     });
   }
-});
-
-submitRatingBtn.addEventListener("click", () => {
-  ratingCard.classList.add("hidden");
-  // Here you would typically send the rating data to a server
-  console.log("Rating submitted");
 });
 
 submitRatingBtn.addEventListener("click", () => {
