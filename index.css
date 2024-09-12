@@ -263,7 +263,7 @@ form button {
   border-radius: 5px;
   resize: none;
   font-size: medium;
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
 }
 
 #submit-rating {

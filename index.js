@@ -178,7 +178,7 @@ submitRatingBtn.addEventListener("click", () => {
     setTimeout(() => {
       ratingPopup.classList.add("hidden");
     }, 500); // Wait for the transition to complete before hiding
-  }, 5000);
+  }, 3000);
 
   // Hide the rating card
   ratingCard.classList.add("hidden");

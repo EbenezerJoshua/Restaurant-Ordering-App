@@ -41,15 +41,18 @@
         <div class="modal-content">
             <h2>Enter card details</h2>
             <form id="payment-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" required>
-                <label for="card-number">Card Number:</label>
-                <input type="text" id="card-number" required>
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" required>
+                <label for="name"><b>Name:</b></label>
+                <input type="text" id="name" placeholder="John Doe" required>
+                
+                <label for="card-number"><b>Card Number:</b></label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required maxlength="19">
+                
+                <label for="cvv"><b>CVV:</b></label>
+                <input type="text" id="cvv" placeholder="123" required maxlength="3">
+                
                 <div class="button-group">
-                    <button type="button" id="edit-order-btn">Edit Order</button>
-                    <button type="submit" id="pay-btn">Pay</button>
+                    <button type="button" id="edit-order-btn"><b>Edit Order</b></button>
+                    <button type="submit" id="pay-btn"><b>Pay $0</b></button>
                 </div>
             </form>
         </div>
@@ -65,7 +68,7 @@
             <span class="star" data-rating="5">☆</span>
         </div>
         <textarea id="rating-comment" placeholder="Your experience (optional):"></textarea>
-        <button id="submit-rating">Submit Rating</button>
+        <button id="submit-rating"><b>Submit Rating</b></button>
     </div>
 
     <div id="rating-popup" class="hidden">Thank you for your rating!</div>
